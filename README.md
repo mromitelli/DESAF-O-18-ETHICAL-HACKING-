@@ -149,23 +149,21 @@ By submitting this query, you agree to abide by the above policy.
 Podemos usar DIG para obtener las direcciones IP de cada sitio:
 dig site1.vulnweb.com +short
 dig site2.vulnweb.com +short
-# y así sucesivamente para los otros sitios
+y así sucesivamente para los otros sitios
 
- 
 
 4. Identificar la geolocalización de cada dirección IP encontrada
 Usaremos una herramienta de GEOIP como geoiplookup para encontrar la ubicación geográfica de cada dirección IP:
 geoiplookup <dirección IP>
 
  
-
 5. Obtener información adicional como puertos abiertos usando NMAP o SHODAN
-•	NMAP: Escanear los sitios para obtener información sobre los puertos abiertos:
+NMAP: Escanear los sitios para obtener información sobre los puertos abiertos:
 bash
 Copiar código
 nmap site1.vulnweb.com
 nmap site2.vulnweb.com
-# y así sucesivamente
+y así sucesivamente
 
  
 
